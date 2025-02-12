@@ -4,6 +4,7 @@ body {
     background: linear-gradient(to right, #ff9966, #ff5e62);
     color: white;
     padding: 20px;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 header {
@@ -32,3 +33,11 @@ button:hover {
     background-color: #ff5e62;
     color: white;
 }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
