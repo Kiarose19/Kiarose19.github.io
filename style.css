@@ -20,19 +20,21 @@ section {
 }
 
 button {
-    background-color: white;
-    color: #ff5e62;
-    border: none;
-    padding: 10px 20px;
+    background: linear-gradient(45deg, #ff5e62, #ff9966);
+    color: white;
+    padding: 12px 25px;
     font-size: 1.2em;
-    cursor: pointer;
+    border: none;
     border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, background 0.3s;
 }
 
 button:hover {
-    background-color: #ff5e62;
-    color: white;
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #ff9966, #ff5e62);
 }
+
 
 @keyframes fadeIn {
     from {
