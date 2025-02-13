@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", revealOnScroll);
 // Initialize Lucide icons
 lucide.createIcons();
 
-// Filter projects based on category
+// Function to filter projects by category
 function filterProjects(category) {
     let projects = document.querySelectorAll(".project-card");
 
@@ -34,3 +34,4 @@ function filterProjects(category) {
         }
     });
 }
+
