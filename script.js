@@ -18,3 +18,19 @@ window.addEventListener("scroll", revealOnScroll);
 
 // Ensure animations trigger on page load
 document.addEventListener("DOMContentLoaded", revealOnScroll);
+
+// Initialize Lucide icons
+lucide.createIcons();
+
+// Filter projects based on category
+function filterProjects(category) {
+    let projects = document.querySelectorAll(".project-card");
+
+    projects.forEach((project) => {
+        if (category === "all" || project.dataset.category === category) {
+            project.style.display = "block";
+        } else {
+            project.style.display = "none";
+        }
+    });
+}
