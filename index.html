@@ -6,6 +6,8 @@
     <title>My GitHub Page</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
 
 </head>
 <body>
@@ -26,28 +28,40 @@
         <a href="https://linkedin.com/in/kiara-mohun-221612Ak" target="_blank">LinkedIn</a>
     </section>
 
-    <section id="projects">
+  <section id="projects">
     <h2>🛠 My Projects</h2>
+    
+    <!-- Filter Buttons -->
+    <div class="filter-buttons">
+        <button onclick="filterProjects('all')">All</button>
+        <button onclick="filterProjects('web')">Web Apps</button>
+        <button onclick="filterProjects('python')">Python</button>
+    </div>
+
     <div class="projects-container">
-        <div class="project-card">
-            <h3>Project 1</h3>
-            <p>A cool web app I built using JavaScript.</p>
+        <div class="project-card" data-category="web">
+            <i data-lucide="globe"></i>
+            <h3>Portfolio Website</h3>
+            <p>A personal website built with HTML, CSS, and JavaScript.</p>
             <a href="https://github.com/your-username/project1" target="_blank">GitHub Repo</a>
         </div>
 
-        <div class="project-card">
-            <h3>Project 2</h3>
-            <p>A Python automation script that saves time.</p>
+        <div class="project-card" data-category="python">
+            <i data-lucide="code"></i>
+            <h3>Automation Script</h3>
+            <p>A Python script that automates daily tasks.</p>
             <a href="https://github.com/your-username/project2" target="_blank">GitHub Repo</a>
         </div>
 
-        <div class="project-card">
-            <h3>Project 3</h3>
-            <p>Live demo of a project hosted on GitHub Pages.</p>
+        <div class="project-card" data-category="web">
+            <i data-lucide="monitor"></i>
+            <h3>React Dashboard</h3>
+            <p>A real-time dashboard built with React.</p>
             <a href="https://your-username.github.io/project3/" target="_blank">Live Demo</a>
         </div>
     </div>
 </section>
+
 
 
     <button onclick="showMessage()">Click Me!</button>
