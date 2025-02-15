@@ -99,7 +99,7 @@ button:hover {
 .project-card:hover {
     transform: scale(1.05);
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 0 12px rgba(255, 165, 0, 0.7); /* Orange glow */
+    box-shadow: 0 0 15px rgba(255, 140, 0, 0.8); /* Orange glow */
     transform: translateY(-5px);
 }
 
