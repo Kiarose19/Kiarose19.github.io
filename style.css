@@ -93,6 +93,9 @@ button:hover {
     overflow: hidden;
     transition: box-shadow 0.3s ease-in-out, transform 0.3s ease;
     border-radius: 12px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
 /* Card Hover Effect */
@@ -131,6 +134,11 @@ button:hover {
     margin-bottom: 10px;
 }
 
+/* When in view, make them visible */
+.project-card.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 
 @keyframes fadeIn {
