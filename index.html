@@ -115,6 +115,23 @@
   <img id="lightbox-img" src="" alt="Expanded Design">
 </div>
 
+<script>
+  const lightboxLinks = document.querySelectorAll('.lightbox');
+  const lightboxModal = document.getElementById('lightbox-modal');
+  const lightboxImg = document.getElementById('lightbox-img');
+
+  lightboxLinks.forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      lightboxImg.src = link.href;
+      lightboxModal.style.display = 'flex';
+    });
+  });
+
+  lightboxModal.addEventListener('click', () => {
+    lightboxModal.style.display = 'none';
+  });
+</script>
 
 
     <button onclick="showMessage()">Click Me!</button>
