@@ -187,7 +187,7 @@ background: #2b2b2b;
   left: 0;
   top: 0;
   width: 90%;
-  height: 90%;
+  height: 70%;
   background: rgba(0, 0, 0, 0.85);
   justify-content: center;
   align-items: center;
@@ -195,7 +195,7 @@ background: #2b2b2b;
 
 .lightbox-modal img {
   max-width: 90%;
-  max-height: 80%;
+  max-height: 70%;
   border-radius: 10px;
   box-shadow: 0 0 25px rgba(255, 140, 0, 0.7);
   animation: zoomIn 0.3s ease;
