@@ -154,10 +154,21 @@ button:hover {
 }
 
 .social-card {
-  background: #2b2b2b;
-  border-radius: 15px;
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background: white;
+    color: black;
+    width: 280px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease;
+    border-radius: 12px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
 .social-card:hover {
@@ -166,7 +177,7 @@ button:hover {
 }
 
 .social-card img {
-  width: 100%;
+  width: 90%;
   height: 160px;
   object-fit: cover;
 }
