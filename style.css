@@ -178,12 +178,6 @@ button:hover {
   font-size: 1rem;
 }
 
-
-
-
-
-
-
 /* When in view, make them visible */
 .project-card.fade-in {
     opacity: 1;
