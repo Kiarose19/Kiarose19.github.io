@@ -1,5 +1,5 @@
 function showMessage() {
-    document.getElementById("message").innerText = "Hello! My page is still under construction but thanks for visiting my page 😊";
+    document.getElementById("message").innerText = "Hello! My page is still under construction but thanks for visiting it 😊";
 }
 // Function to add a scroll effect
 function revealOnScroll() {
