@@ -134,6 +134,51 @@ button:hover {
     margin-bottom: 10px;
 }
 
+.social-section {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.social-section h2 {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 10px rgba(255, 140, 0, 0.6);
+}
+
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.social-card {
+  background: #2b2b2b;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(255, 140, 0, 0.8);
+}
+
+.social-card img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.social-card p {
+  padding: 1rem;
+  color: #f1f1f1;
+  font-size: 1rem;
+}
+
+
 /* When in view, make them visible */
 .project-card.fade-in {
     opacity: 1;
